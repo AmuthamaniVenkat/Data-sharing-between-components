@@ -1,0 +1,7 @@
+
+<div class="row" style="background:beige"><app-home></app-home></div>
+<div class="row" style="background:burlywood">
+    <h1>Share data between sibling components</h1>
+    <app-sender (shareDataEvent)="receiver.sendData($event)"></app-sender>
+<app-receiver #receiver></app-receiver>
+</div>

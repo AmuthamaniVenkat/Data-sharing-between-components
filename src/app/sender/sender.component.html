@@ -1,0 +1,20 @@
+<p>
+  sender works!
+</p>
+<div><h2>Sender data</h2>
+<table>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr *ngFor="let row of _data"> 
+      <td>{{row.Company}}</td>
+      <td>{{row.Contact}}</td>
+      <td>{{row.Country}}</td>
+    </tr>
+   
+  </table>
+  
+</div>
+  <button (click)="shareData();">Share data to receiver</button>
